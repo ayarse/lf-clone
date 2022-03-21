@@ -1,0 +1,38 @@
+@import "_fonts";
+
+$lf-teal: #0fccce;
+$lf-teal-dark: #08b9bb;
+$lf-grey: #b8c2cc;
+$lf-grey-dark: #8795a1;
+$lf-grey-darker: #606f7b;
+$lf-grey-darkest: #3d4852;
+$lf-black: #22292f;
+
+body {
+    font-family: "averta-regular", sans-serif;
+}
+
+.hover .bg-lf-teal {
+    background-color: $lf-teal;
+}
+
+.text-grey {
+    color: $lf-grey;
+}
+
+.text-grey-dark {
+    color: $lf-grey-dark;
+}
+
+.text-grey-darker {
+    color: $lf-grey-darker;
+}
+
+.text-grey-darkest {
+    color: $lf-grey-darkest;
+}
+
+.text-lf-black {
+    color: $lf-black;
+}
+
