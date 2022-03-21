@@ -36,3 +36,10 @@ body {
     color: $lf-black;
 }
 
+.bg-search-icon {
+    background-position: left;
+    background-position-x: 0.6rem;
+    background-repeat:no-repeat;
+    background-size: 1rem;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' x='0' y='0' viewBox='0 0 403.2 403.2' style='enable-background:new 0 0 403.2 403.2' xml:space='preserve'%3E%3Cpath d='M162.4 0C72.9 0 0 72.9 0 162.4s72.9 162.4 162.4 162.4c38.7 0 74.3-13.7 102.2-36.4l109.9 109.9c6.6 6.6 17.2 6.6 23.8 0s6.6-17.1 0-23.6L288.4 264.8c22.8-28 36.4-63.6 36.4-102.4C324.8 72.9 251.9 0 162.4 0zm0 33.6c71.3 0 128.8 57.5 128.8 128.8s-57.5 128.8-128.8 128.8S33.6 233.7 33.6 162.4 91.1 33.6 162.4 33.6z' style='fill:%23b8c2cc'/%3E%3C/svg%3E");
+}
