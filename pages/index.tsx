@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Layout from '../components/layout'
-import { Player, Controls } from '@lottiefiles/react-lottie-player'
+import { Player } from '@lottiefiles/react-lottie-player'
 import ArrowButton from '../components/arrowButton'
 import ComparisonBox from '../components/comparisonBox'
 import CompanyLogos from '../components/companyLogos'

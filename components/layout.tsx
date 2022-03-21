@@ -3,11 +3,10 @@ import Footer from './footer'
 import Navbar from './navbar'
 
 type LayoutProps = {
-  children?: ReactNode
-  title?: string
+  children: ReactNode
 }
 
-const Layout = ({ children, title = 'LottieFiles' }: LayoutProps) => {
+const Layout = ({ children }: LayoutProps) => {
   return (
     <div>
       <Navbar />
