@@ -1,17 +1,18 @@
-import { ReactElement, ReactNode } from 'react'
+import { ReactNode } from 'react'
 
 type ComparisonBoxProps = {
+  children: ReactNode
   active: boolean
   format: string
   size: string
 }
 
-const ComparisonBox: React.FC<ComparisonBoxProps> = ({
+const ComparisonBox = ({
   children,
   active,
   format,
   size,
-}) => {
+}: ComparisonBoxProps) => {
   return (
     <div className="ml-6">
       <div
