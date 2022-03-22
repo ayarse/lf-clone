@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Avatar from './avatar'
 import NavbarItem from './navbarItem'
 import SearchBox from './searchbox'
+import ChevronBottom from './util/chevron_bottom'
 
 const navItems = [
   {
@@ -55,7 +56,11 @@ const Navbar = () => {
         <div className="flex-1 px-4 text-right">
           <SearchBox />
         </div>
-        <Avatar />
+        <div className="w-11 p-1">
+          <Avatar url="https://ui-avatars.com/api/?name=Ayas+Nasih&background=606f7b&color=fff&rounded=true">
+            <ChevronBottom />
+          </Avatar>
+        </div>
       </div>
     </div>
   )
