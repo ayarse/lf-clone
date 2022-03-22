@@ -58,7 +58,7 @@ const Navbar = () => {
         </div>
         <div className="w-11 p-1">
           <Avatar url="https://ui-avatars.com/api/?name=Ayas+Nasih&background=606f7b&color=fff&rounded=true">
-            <ChevronBottom />
+            <ChevronBottom className="opacity-30" />
           </Avatar>
         </div>
       </div>
