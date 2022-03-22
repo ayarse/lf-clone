@@ -6,22 +6,22 @@ import SearchBox from './searchbox'
 const navItems = [
   {
     name: 'Discover',
-    href: '#',
+    href: '/search',
     color: 'lf-teal',
   },
   {
     name: 'Design',
-    href: '#',
+    href: '',
     color: 'lf-green',
   },
   {
     name: 'Code',
-    href: '#',
+    href: '',
     color: 'lf-blue',
   },
   {
     name: 'Learn',
-    href: '#',
+    href: '',
     color: 'lf-violet',
   },
 ]
