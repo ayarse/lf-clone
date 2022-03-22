@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import FluidLayout from '../components/fluidLayout'
+import FluidLayout from './shared/fluidLayout'
 import LfDropdown from './animationList/lf-dropdown'
 import LottiePreviewCard from './animationList/lottiePreviewCard'
 import SortByDropdown from './animationList/sortByDropdown'
