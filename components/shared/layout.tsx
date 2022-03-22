@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import FluidLayout from './fluidLayout'
+import FluidLayout from './FluidLayout'
 
 type LayoutProps = {
   children: ReactNode

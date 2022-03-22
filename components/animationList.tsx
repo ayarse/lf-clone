@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import FluidLayout from './shared/fluidLayout'
-import LfDropdown from './animationList/lf-dropdown'
-import LottiePreviewCard from './animationList/lottiePreviewCard'
-import SortByDropdown from './animationList/sortByDropdown'
-import Subnav from './animationList/subnav'
+import FluidLayout from './shared/FluidLayout'
+import LfDropdown from './animationList/LfDropdown'
+import LottiePreviewCard from './animationList/LottiePreviewCard'
+import SortByDropdown from './animationList/SortByDropdown'
+import Subnav from './animationList/Subnav'
 
 const AnimationList = ({ title }: { title: string }) => {
   return (

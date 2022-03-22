@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import Avatar from './avatar'
-import NavbarItem from './navbarItem'
-import SearchBox from '../searchbox'
+import Avatar from './Avatar'
+import NavbarItem from './NavbarItem'
+import SearchBox from '../Searchbox'
 import ChevronBottom from '../util/chevron_bottom'
 
 const navItems = [

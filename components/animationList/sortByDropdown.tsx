@@ -1,4 +1,4 @@
-import LfDropdown from './lf-dropdown'
+import LfDropdown from './LfDropdown'
 
 const SortByDropdown = () => {
   return (

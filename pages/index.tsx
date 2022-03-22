@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
-import Layout from '../components/shared/layout'
+import Layout from '../components/shared/Layout'
 import { Player } from '@lottiefiles/react-lottie-player'
-import ArrowButton from '../components/arrowButton'
-import ComparisonBox from '../components/comparisonBox'
-import CompanyLogos from '../components/companyLogos'
+import ArrowButton from '../components/ArrowButton'
+import ComparisonBox from '../components/ComparisonBox'
+import CompanyLogos from '../components/CompanyLogos'
 import Head from 'next/head'
 import ReactTextRotator from 'react-text-rotator'
 

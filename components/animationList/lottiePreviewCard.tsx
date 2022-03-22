@@ -1,5 +1,5 @@
 import { Player } from '@lottiefiles/react-lottie-player'
-import Avatar from '../shared/avatar'
+import Avatar from '../shared/Avatar'
 
 type LottiePreviewCardProps = {
   lottie: string
