@@ -1,6 +1,5 @@
 import { ReactNode } from 'react'
-import Footer from './footer'
-import Navbar from './navbar'
+import FluidLayout from './fluidLayout'
 
 type LayoutProps = {
   children: ReactNode
@@ -8,11 +7,9 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div>
-      <Navbar />
+    <FluidLayout>
       <div className="container mx-auto">{children}</div>
-      <Footer />
-    </div>
+    </FluidLayout>
   )
 }
 
