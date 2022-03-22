@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Avatar from './Avatar'
 import NavbarItem from './NavbarItem'
 import SearchBox from '../Searchbox'
-import ChevronBottom from '../util/chevron_bottom'
+import { ChevronDownIcon } from '../util/Icons'
 
 const navItems = [
   {
@@ -58,7 +58,7 @@ const Navbar = () => {
         </div>
         <div className="w-11 p-1">
           <Avatar url="https://ui-avatars.com/api/?name=Ayas+Nasih&background=606f7b&color=fff&rounded=true">
-            <ChevronBottom className="opacity-30" />
+            <ChevronDownIcon className="opacity-30" />
           </Avatar>
         </div>
       </div>

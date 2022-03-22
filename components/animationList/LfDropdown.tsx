@@ -1,4 +1,5 @@
 import { ReactNode, useEffect, useState } from 'react'
+import { ChevronDownIcon } from '../util/Icons'
 
 type LfDropdownProps = {
   title: string
@@ -24,19 +25,7 @@ const LfDropdown = ({ title, children }: LfDropdownProps) => {
         onClick={clickDropdown}
       >
         {title}
-        <svg
-          data-v-57a3d841=""
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          className="-mr-2 inline-block w-5"
-        >
-          <path
-            data-v-57a3d841=""
-            fillRule="evenodd"
-            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-            clipRule="evenodd"
-          ></path>
-        </svg>
+        <ChevronDownIcon />
       </div>
       <div
         className={`absolute mt-2 rounded-md border border-gray-300 bg-white p-3 ${
