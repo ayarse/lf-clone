@@ -5,6 +5,7 @@ import ArrowButton from '../components/arrowButton'
 import ComparisonBox from '../components/comparisonBox'
 import CompanyLogos from '../components/companyLogos'
 import Head from 'next/head'
+import ReactTextRotator from 'react-text-rotator'
 
 const companies = [
   'airbnb.svg',
@@ -17,6 +18,35 @@ const companies = [
   'spotify.svg',
   'tiktok.svg',
   'uber.svg',
+]
+const contentClass = 'text-lf-teal inline-block'
+const content = [
+  {
+    text: 'docs',
+    className: contentClass,
+  },
+  {
+    text: 'website',
+    className: contentClass,
+  },
+  {
+    text: 'ads',
+    className: contentClass,
+  },
+]
+const content2 = [
+  {
+    text: 'pitches',
+    className: contentClass,
+  },
+  {
+    text: 'apps',
+    className: contentClass,
+  },
+  {
+    text: 'social media',
+    className: contentClass,
+  },
 ]
 
 const Home: NextPage = () => {
@@ -32,8 +62,8 @@ const Home: NextPage = () => {
           <h1 className="averta-bold text-6xl text-lf-black">
             Lightweight, scalable animations for your
             <div>
-              <span className="words text-lf-teal">docs</span> and{' '}
-              <span className="words text-lf-teal">pitches</span>
+              <ReactTextRotator content={content} time={3000} /> and{' '}
+              <ReactTextRotator content={content2} time={3000} />
             </div>
           </h1>
           <p className="text-grey-dark w-3/4 py-6 text-lg">
