@@ -26,7 +26,8 @@ module.exports = {
         'lf-black': '#22292f',
         'lf-green': '#42d396',
         'lf-blue': '#65bbe7',
-        'lf-violet': '#7674f5'
+        'lf-violet': '#7674f5',
+        'lf-grey-lighter': '#f1f5f8'
       },
     },
   },
