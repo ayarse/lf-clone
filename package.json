@@ -5,6 +5,9 @@
     "build": "next build",
     "start": "next start"
   },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.4.2",
     "@prisma/client": "^3.11.1",
