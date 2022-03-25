@@ -22,7 +22,7 @@ export const Modal = ({ open, close, children }: ModelProps) => {
         <CloseIcon fill="#000" className="h-12 w-12 opacity-50" />
       </div>
       <div
-        className="relative z-40 mx-auto my-12 h-full w-2/5 overflow-auto rounded-lg bg-white shadow-xl"
+        className="relative z-40 mx-auto my-12 w-2/5 overflow-visible rounded-lg bg-white shadow-xl"
         onClick={(e) => e.stopPropagation()}
       >
         {children}
