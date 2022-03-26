@@ -11,7 +11,7 @@ const Avatar = ({ url, children }: AvatarProps) => {
   return (
     <div className="flex items-center">
       <img
-        className="w-full rounded-full object-contain"
+        className="aspect-square w-full rounded-full object-cover"
         src={typeof url === 'string' ? url : url()}
         alt=""
       />
