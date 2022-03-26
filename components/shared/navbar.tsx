@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Avatar from './Avatar'
 import NavbarItem from './NavbarItem'
 import SearchBox from '../Searchbox'
-import { ChevronDownIcon } from '../util/Icons'
+import { ChevronDownIcon } from '../util'
 
 const navItems = [
   {
@@ -27,7 +27,7 @@ const navItems = [
   },
 ]
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <div className="h-24 bg-gray-50 shadow-xl shadow-gray-100">
       <div className="container mx-auto flex h-full items-center justify-between">

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ChevronDownIcon } from '../util/Icons'
+import { ChevronDownIcon } from '../util'
 
 type NavbarItemProps = {
   name: string
@@ -7,7 +7,7 @@ type NavbarItemProps = {
   color: string
 }
 
-const NavbarItem = ({ name, href, color }: NavbarItemProps) => {
+export const NavbarItem = ({ name, href, color }: NavbarItemProps) => {
   return (
     <Link href={href}>
       <a

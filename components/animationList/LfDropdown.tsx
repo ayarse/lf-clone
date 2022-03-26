@@ -1,5 +1,5 @@
 import { ReactNode, useEffect, useState } from 'react'
-import { ChevronDownIcon } from '../util/Icons'
+import { ChevronDownIcon } from '../util'
 
 type LfDropdownProps = {
   title: string

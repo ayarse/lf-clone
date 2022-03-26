@@ -1,10 +1,8 @@
 import { Player } from '@lottiefiles/react-lottie-player'
 import { useState } from 'react'
 import LottiePreviewDetail from '../LottiePreviewDetail'
-import Avatar from '../shared/Avatar'
-import { DownloadIcon } from '../util/Icons'
-import { Lottie } from '../util/LottieTypes'
-import { Modal } from '../util/Modal'
+import { Avatar } from '../shared'
+import { DownloadIcon, Lottie, Modal } from '../util'
 
 type LottiePreviewCardProps = {
   lottie: Lottie

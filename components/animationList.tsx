@@ -1,12 +1,10 @@
 import Head from 'next/head'
-import FluidLayout from './shared/FluidLayout'
 import LfDropdown from './animationList/LfDropdown'
 import LottiePreviewCard from './animationList/LottiePreviewCard'
 import SortByDropdown from './animationList/SortByDropdown'
 import Subnav from './animationList/Subnav'
-import { Lottie } from './util/LottieTypes'
 import { gql, useQuery } from '@apollo/client'
-import Loader from './shared/Loader'
+import { FluidLayout, Loader } from './shared'
 
 const AllAnimationsQuery = gql`
   query Query {

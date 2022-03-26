@@ -1,8 +1,7 @@
 import { Controls, Player } from '@lottiefiles/react-lottie-player'
 import React, { useEffect, useState } from 'react'
-import Avatar from './shared/Avatar'
-import IconButton from './util/IconButton'
-import { Lottie } from './util/LottieTypes'
+import { Avatar } from './shared'
+import { IconButton, Lottie } from './util'
 // import * as LottieJS from '@lottiefiles/lottie-js'
 import watermark from '../public/lotties/watermark.json'
 

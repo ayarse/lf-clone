@@ -5,7 +5,7 @@ type LayoutProps = {
   children: ReactNode
 }
 
-const Layout = ({ children }: LayoutProps) => {
+export const Layout = ({ children }: LayoutProps) => {
   return (
     <FluidLayout>
       <div className="container mx-auto">{children}</div>

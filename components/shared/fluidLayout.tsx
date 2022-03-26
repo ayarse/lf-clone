@@ -6,7 +6,7 @@ type LayoutProps = {
   children: ReactNode
 }
 
-const FluidLayout = ({ children }: LayoutProps) => {
+export const FluidLayout = ({ children }: LayoutProps) => {
   return (
     <div>
       <Navbar />

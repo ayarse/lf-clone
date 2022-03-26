@@ -1,4 +1,4 @@
-import { RightArrowIcon } from './util/Icons'
+import { RightArrowIcon } from './util'
 
 type ArrowButtonProps = {
   title?: string

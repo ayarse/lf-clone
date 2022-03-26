@@ -1,14 +1,13 @@
 import React from 'react'
 import { HeartIcon, DownloadIcon } from './Icons'
 
-const IconButton = ({
-  label,
-  icon,
-}: {
+type IconButtonProps = {
   label: string
   icon: 'heart' | 'download'
-}) => {
-  let renderIcon = null
+}
+
+export const IconButton = ({ label, icon }: IconButtonProps) => {
+  let renderIcon: JSX.Element | string = ''
   if (icon === 'download')
     renderIcon = <DownloadIcon fill="#0fccce" width="14" height="16" />
   if (icon === 'heart')
@@ -25,5 +24,3 @@ const IconButton = ({
     </a>
   )
 }
-
-export default IconButton

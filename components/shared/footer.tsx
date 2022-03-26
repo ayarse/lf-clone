@@ -111,7 +111,7 @@ const footerLinks = [
     ],
   },
 ]
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="border-t-lf-grey-50 container mx-auto justify-center border-t py-12">
       <div className="grid grid-cols-6">

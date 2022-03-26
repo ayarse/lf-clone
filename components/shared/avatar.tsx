@@ -7,7 +7,7 @@ type AvatarProps = {
   children?: ReactNode
 }
 
-const Avatar = ({ url, children }: AvatarProps) => {
+export const Avatar = ({ url, children }: AvatarProps) => {
   return (
     <div className="flex items-center">
       <img
