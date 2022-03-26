@@ -74,7 +74,7 @@ const LottiePreviewDetail = ({ lottie }: LottiePreviewDetailProps) => {
   // }
 
   return (
-    <div className="">
+    <>
       <div className="flex items-center p-4">
         <div className="w-10">
           <Avatar url={lottie.user.avatar || undefined} />
@@ -201,7 +201,7 @@ const LottiePreviewDetail = ({ lottie }: LottiePreviewDetailProps) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
