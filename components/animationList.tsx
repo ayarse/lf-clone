@@ -6,6 +6,7 @@ import SortByDropdown from './animationList/SortByDropdown'
 import Subnav from './animationList/Subnav'
 import { Lottie } from './util/LottieTypes'
 import { gql, useQuery } from '@apollo/client'
+import Loader from './shared/Loader'
 
 const AllAnimationsQuery = gql`
   query Query {
@@ -26,7 +27,7 @@ const AllAnimationsQuery = gql`
 
 const AnimationList = ({ title }: { title: string }) => {
   const { data, error, loading } = useQuery(AllAnimationsQuery)
-  if (loading) return <p>Loading...</p>
+  if (loading) return <Loader />
   if (error) return <p>Oops, something went wrong - {error.message}</p>
 
   return (
