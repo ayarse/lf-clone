@@ -39,10 +39,10 @@ const LottiePreviewCard = ({ lottie }: LottiePreviewCardProps) => {
       <div className="flex justify-between p-3">
         <div className="flex items-center">
           <div className="w-7 rounded-full bg-lf-teal">
-            <Avatar url={lottie.author.avatar} />
+            <Avatar url={lottie.user.avatar || undefined} />
           </div>
           <div className="text-grey-darkest ml-2 text-sm">
-            {lottie.author.name}
+            {lottie.user.name}
           </div>
         </div>
         <div className="text-grey-darkest ml-2 align-middle text-sm">

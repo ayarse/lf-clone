@@ -5,7 +5,7 @@ export type LottieAuthor = {
 
 export type Lottie = {
     id: number
-    author: LottieAuthor
+    user: LottieAuthor
     assetUrl: string
     downloads: string
     likes: string

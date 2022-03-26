@@ -78,9 +78,9 @@ const LottiePreviewDetail = ({ lottie }: LottiePreviewDetailProps) => {
     <div className="">
       <div className="flex items-center p-4">
         <div className="w-10">
-          <Avatar url={lottie.author.avatar} />
+          <Avatar url={lottie.user.avatar || undefined} />
         </div>
-        <div className="text-grey-darker ml-4 ">{lottie.author.name}</div>
+        <div className="text-grey-darker ml-4 ">{lottie.user.name}</div>
         <div className="flex-1 text-right">
           <IconButton label="Download" icon="download" />{' '}
           <IconButton icon="heart" label={`Like ${lottie.likes ?? 0}`} />
