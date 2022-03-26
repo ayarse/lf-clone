@@ -3,12 +3,19 @@ import { extendType, objectType } from "nexus"
 export const User = objectType({
     name: 'User',
     definition(t) {
+        t.nonNull.int('id')
         t.string('name')
         t.string('avatar')
-        t.field('lotties', {
+        t.nullable.list.field('lotties', {
             type: 'Lottie',
             resolve(_parent, _args, ctx) {
-                return ctx.prisma.lottie.findMany()
+                return ctx.prisma.lottie.findMany(
+                    {
+                        where: {
+                            userId: _parent.id,
+                        }
+                    }
+                )
             }
         })
     }

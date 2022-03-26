@@ -6,7 +6,7 @@ type Lottie {
   assetUrl: String
   description: String
   downloads: String
-  id: String
+  id: Int!
   likes: String
   title: String
   user: User
@@ -19,6 +19,7 @@ type Query {
 
 type User {
   avatar: String
-  lotties: Lottie
+  id: Int!
+  lotties: [Lottie]
   name: String
 }

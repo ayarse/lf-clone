@@ -4,7 +4,7 @@ import { User } from './User'
 export const Lottie = objectType({
     name: 'Lottie',
     definition(t) {
-        t.string('id')
+        t.nonNull.int('id')
         t.string('title')
         t.string('assetUrl')
         t.string('title')
@@ -17,7 +17,7 @@ export const Lottie = objectType({
             async resolve(_parent, _args, ctx) {
                 return await ctx.prisma.user.findUnique({
                     where: {
-                        id: parseInt(_parent?.id ?? "0")
+                        id: _parent.id
                     }
                 })
             }
