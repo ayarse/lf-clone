@@ -66,13 +66,13 @@ const LottiePreviewDetail = ({ lottie }: LottiePreviewDetailProps) => {
   }, [posX, posY, wmSize])
 
   // Change player background when background state is changed
-  useEffect(() => {
-    setPlayerBg(background)
-  }, [background])
+  // useEffect(() => {
+  //   setPlayerBg(background)
+  // }, [background])
 
-  const setPlayerBg = (color: string) => {
-    player.current?.setState({ background: color })
-  }
+  // const setPlayerBg = (color: string) => {
+  // player.current?.setState({ background: color })
+  // }
 
   return (
     <div className="">
@@ -92,6 +92,7 @@ const LottiePreviewDetail = ({ lottie }: LottiePreviewDetailProps) => {
         src={{ ...currentAnimation }}
         autoplay
         loop
+        background={background}
         style={{ height: '100%', width: '100%' }}
       >
         <Controls visible={true} buttons={['play', 'repeat', 'frame']} />
