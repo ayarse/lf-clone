@@ -66,7 +66,7 @@ const Home: NextPage = () => {
               <ReactTextRotator content={content2} time={3000} />
             </div>
           </h1>
-          <p className="text-grey-dark w-3/4 py-6 text-lg">
+          <p className="w-3/4 py-6 text-lg text-lf-grey-dark">
             LottieFiles provides all the tools that you need to <br />
             create, edit, test and display Lottie animations.
           </p>
@@ -82,7 +82,7 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section className="container mx-auto">
-        <h5 className="text-grey-darker averta-regular text-center">
+        <h5 className="averta-regular text-center text-lf-grey-darker">
           Used by designers and developers from{' '}
           <span className="averta-bold font-bold">130,000+ companies</span>{' '}
           worldwide
@@ -104,10 +104,10 @@ const Home: NextPage = () => {
           </ComparisonBox>
         </div>
         <div className="w-1/2">
-          <h2 className="averta-semi  bold text-grey-darkest text-5xl">
+          <h2 className="averta-semi  bold text-5xl text-lf-grey-darkest">
             The new industry standard
           </h2>
-          <p className="text-grey py-6 text-lg">
+          <p className="py-6 text-lg text-lf-grey">
             Lottie is an open source animation file format that’s tiny, high
             quality, interactive, and can be manipulated at runtime. The top 500
             apps on the App store now use Lottie to engage users and enhance

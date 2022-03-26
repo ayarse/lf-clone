@@ -39,11 +39,11 @@ const LottiePreviewCard = ({ lottie }: LottiePreviewCardProps) => {
           <div className="w-7 rounded-full bg-lf-teal">
             <Avatar url={lottie.user.avatar || undefined} />
           </div>
-          <div className="text-grey-darkest ml-2 text-sm">
+          <div className="text-lf-grey-darkest ml-2 text-sm">
             {lottie.user.name}
           </div>
         </div>
-        <div className="text-grey-darkest ml-2 align-middle text-sm">
+        <div className="text-lf-grey-darkest ml-2 align-middle text-sm">
           <DownloadIcon fill="#8E8E8E" height="10" width="9" />
           {lottie.downloads}
         </div>

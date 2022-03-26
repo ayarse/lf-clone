@@ -11,7 +11,7 @@ export const NavbarItem = ({ name, href, color }: NavbarItemProps) => {
   return (
     <Link href={href}>
       <a
-        className={`text-grey-darker averta-regular flex h-full w-28 flex-col justify-center text-center hover:border-b-2 hover:border-b-${color} hover:pt-0.5`}
+        className={`averta-regular flex h-full w-28 flex-col justify-center text-center text-lf-grey-darker hover:border-b-2 hover:border-b-${color} hover:pt-0.5`}
       >
         <div className="flex items-center justify-center">
           {name}

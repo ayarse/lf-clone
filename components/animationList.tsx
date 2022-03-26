@@ -47,7 +47,7 @@ const AnimationList = ({ title }: { title: string }) => {
               <a className="averta-semibold mr-5 inline-block rounded-md bg-gray-100 px-2 py-1 text-xs">
                 Animations
               </a>
-              <a className="text-grey-dark text-xs">People</a>
+              <a className="text-xs text-lf-grey-dark">People</a>
             </div>
             <div className="flex">
               <span>

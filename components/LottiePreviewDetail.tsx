@@ -79,7 +79,7 @@ const LottiePreviewDetail = ({ lottie }: LottiePreviewDetailProps) => {
         <div className="w-10">
           <Avatar url={lottie.user.avatar || undefined} />
         </div>
-        <div className="text-grey-darker ml-4 ">{lottie.user.name}</div>
+        <div className="ml-4 text-lf-grey-darker ">{lottie.user.name}</div>
         <div className="flex-1 text-right">
           <IconButton label="Download" icon="download" />{' '}
           <IconButton icon="heart" label={`Like ${lottie.likes ?? 0}`} />
@@ -100,7 +100,7 @@ const LottiePreviewDetail = ({ lottie }: LottiePreviewDetailProps) => {
       <div className="grid grid-cols-8 p-6">
         <div className="col-span-5">
           <h3 className="averta-semibold text-xl">{lottie.title}</h3>
-          <p className="text-grey-dark">{lottie.description}</p>
+          <p className="text-lf-grey-dark">{lottie.description}</p>
         </div>
         <div className="col-span-3">
           <div className="rounded-md bg-lf-grey-lighter p-2 text-sm text-lf-teal-700">

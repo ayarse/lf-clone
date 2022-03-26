@@ -23,6 +23,7 @@ module.exports = {
         'lf-grey': '#b8c2cc',
         'lf-grey-dark': '#8795a1',
         'lf-grey-darker': '#606f7b',
+        'lf-grey-darkest': '#3d4852',
         'lf-black': '#22292f',
         'lf-green': '#42d396',
         'lf-blue': '#65bbe7',
