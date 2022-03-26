@@ -25,13 +25,13 @@ export const Lottie = objectType({
     }
 
 })
-
 export const LottieQuery = extendType({
     type: 'Query',
     definition(t) {
         t.nonNull.list.field('lotties', {
             type: 'Lottie',
-            resolve(_parent, _args, ctx) {
+            // eslint-disable-next-line
+            resolve(_parent, _args, ctx): any {
                 return ctx.prisma.lottie.findMany()
             }
         })

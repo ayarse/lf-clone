@@ -8,7 +8,8 @@ export const User = objectType({
         t.string('avatar')
         t.nullable.list.field('lotties', {
             type: 'Lottie',
-            resolve(_parent, _args, ctx) {
+            // eslint-disable-next-line
+            resolve(_parent, _args, ctx): any {
                 return ctx.prisma.lottie.findMany(
                     {
                         where: {
