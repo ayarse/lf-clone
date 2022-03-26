@@ -4,7 +4,7 @@ import Avatar from './shared/Avatar'
 import IconButton from './util/IconButton'
 import { Lottie } from './util/LottieTypes'
 // import * as LottieJS from '@lottiefiles/lottie-js'
-import watermark from '../public/watermark.json'
+import watermark from '../public/lotties/watermark.json'
 
 type LottiePreviewDetailProps = {
   lottie: Lottie
