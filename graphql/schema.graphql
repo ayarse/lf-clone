@@ -20,9 +20,16 @@ type Lottie {
 }
 
 type Query {
-  lotties: [Lottie]!
+  lotties(page: Int = 1, sortBy: String = "createdAt"): [Lottie]!
   search(query: String!): [Lottie]!
+  tags(name: String!): Tag!
   users: [User]!
+}
+
+type Tag {
+  id: Int!
+  lotties: [Lottie]
+  name: String
 }
 
 type User {

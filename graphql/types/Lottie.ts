@@ -1,4 +1,4 @@
-import { extendType, nonNull, objectType, stringArg } from 'nexus'
+import { extendType, intArg, nonNull, objectType, stringArg } from 'nexus'
 import { User } from './User'
 
 
@@ -35,9 +35,21 @@ export const LottieQuery = extendType({
     definition(t) {
         t.nonNull.list.field('lotties', {
             type: 'Lottie',
+            args: {
+                page: intArg({ default: 1 }),
+                sortBy: stringArg({ default: 'createdAt' })
+            },
             // eslint-disable-next-line
-            resolve(_parent, _args, ctx): any {
-                return ctx.prisma.lottie.findMany()
+            resolve(_parent, args, ctx): any {
+                return ctx.prisma.lottie.findMany(
+                    {
+                        skip: args.page > 1 ? args.page * 16 - 16 : 0,
+                        take: 16,
+                        orderBy: {
+                            [args.sortBy ?? "createdAt"]: "desc"
+                        }
+                    }
+                )
             }
         })
     }
