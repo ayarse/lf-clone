@@ -3,30 +3,23 @@ import LfDropdown from './animationList/LfDropdown'
 import LottiePreviewCard from './animationList/LottiePreviewCard'
 import SortByDropdown from './animationList/SortByDropdown'
 import Subnav from './animationList/Subnav'
-import { gql, useQuery } from '@apollo/client'
+import { ApolloError } from '@apollo/client'
 import { FluidLayout, Loader } from './shared'
+import { Lottie } from './util'
 
-const AllAnimationsQuery = gql`
-  query Query {
-    lotties {
-      id
-      title
-      description
-      assetUrl
-      downloads
-      likes
-      user {
-        name
-        avatar
-      }
-    }
-  }
-`
+type AnimationListProps = {
+  title: string
+  mode: 'search' | 'filter' | 'browse'
+  loading: boolean
+  error: ApolloError | undefined
+  lotties: Lottie[]
+}
 
-const AnimationList = ({ title }: { title: string }) => {
-  const { data, error, loading } = useQuery(AllAnimationsQuery)
-  if (loading) return <Loader />
-  if (error) return <p>Oops, something went wrong - {error.message}</p>
+const AnimationList = ({ ...props }: AnimationListProps) => {
+  if (props.loading) return <Loader />
+
+  if (props.error)
+    return <p>Oops, something went wrong - {props.error.message}</p>
 
   return (
     <FluidLayout>
@@ -39,7 +32,7 @@ const AnimationList = ({ title }: { title: string }) => {
       <section className=" bg-white py-6">
         <div className="container mx-auto">
           <div className="flex justify-between">
-            <h1 className="averta-bold text-2xl">{title}</h1>
+            <h1 className="averta-bold text-2xl">{props.title}</h1>
             <SortByDropdown />
           </div>
           <div className="grid grid-cols-3 items-center">
@@ -62,7 +55,7 @@ const AnimationList = ({ title }: { title: string }) => {
       </section>
       <section className="bg-gray-100 py-6">
         <div className="container mx-auto grid grid-cols-4 gap-6">
-          {data.lotties.map((lottie) => (
+          {props.lotties.map((lottie) => (
             <LottiePreviewCard key={lottie.id} lottie={lottie} />
           ))}
         </div>
