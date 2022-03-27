@@ -22,13 +22,18 @@ const LottiePreviewCard = ({ lottie }: LottiePreviewCardProps) => {
     <div className="p-3">
       <div
         onClick={openModal}
-        className="flex aspect-square w-full items-center rounded-md bg-white p-2 shadow-md hover:cursor-pointer"
+        className="flex aspect-square w-full items-center overflow-hidden rounded-md bg-white object-contain p-2 shadow-md hover:cursor-pointer"
       >
         <Player
           autoplay
           loop
           src={lottie.assetUrl}
-          style={{ height: '100%', width: '100%' }}
+          style={{
+            height: '100%',
+            width: '100%',
+            maxHeight: '100%',
+            objectFit: 'contain',
+          }}
         ></Player>
       </div>
       <Modal open={openPreview} close={closeModal}>
@@ -37,13 +42,13 @@ const LottiePreviewCard = ({ lottie }: LottiePreviewCardProps) => {
       <div className="flex justify-between p-3">
         <div className="flex items-center">
           <div className="w-7 rounded-full bg-lf-teal">
-            <Avatar url={lottie.user.avatar || undefined} />
+            <Avatar url={lottie.user?.avatar || undefined} />
           </div>
-          <div className="text-lf-grey-darkest ml-2 text-sm">
-            {lottie.user.name}
+          <div className="ml-2 text-sm text-lf-grey-darkest">
+            {lottie.user?.name}
           </div>
         </div>
-        <div className="text-lf-grey-darkest ml-2 align-middle text-sm">
+        <div className="ml-2 align-middle text-sm text-lf-grey-darkest">
           <DownloadIcon fill="#8E8E8E" height="10" width="9" />
           {lottie.downloads}
         </div>
