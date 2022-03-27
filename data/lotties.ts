@@ -5,8 +5,8 @@ const rand = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
 export const lotties: Prisma.LottieCreateManyInput[] = [
     {
         "userId": rand(1, 6),
-        "assetUrl": "https://assets5.lottiefiles.com/datafiles/8UjWgBkqvEF5jNoFcXV4sdJ6PXpS6DwF7cK4tzpi/Check Mark Success/Check Mark Success Data.json",
-        "title": "Check Mark - Success",
+        "assetUrl": "https://assets4.lottiefiles.com/packages/lf20_irzds0pd.json",
+        "title": "Loader, Loading Animation",
         "downloads": 14310,
         "likes": 480,
         "createdAt": "2017-10-04T18:16:21.000Z",
