@@ -5,7 +5,7 @@ export const User = objectType({
     definition(t) {
         t.nonNull.int('id')
         t.string('name')
-        t.string('avatar')
+        t.nullable.string('avatar')
         t.nullable.list.field('lotties', {
             type: 'Lottie',
             // eslint-disable-next-line
