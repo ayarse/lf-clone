@@ -7,7 +7,7 @@ import { ChevronDownIcon } from '../util'
 const navItems = [
   {
     name: 'Discover',
-    href: '/search',
+    href: '/browse',
     color: 'lf-teal',
   },
   {
