@@ -43,7 +43,7 @@ export const LottieQuery = extendType({
             resolve(_parent, args, ctx): any {
                 return ctx.prisma.lottie.findMany(
                     {
-                        skip: args.page > 1 ? args.page * 16 - 16 : 0,
+                        skip: args.page ?? 1 > 1 ? (args.page ?? 1) * 16 - 16 : 0,
                         take: 16,
                         orderBy: {
                             [args.sortBy ?? "createdAt"]: "desc"
