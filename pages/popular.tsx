@@ -29,7 +29,6 @@ const PopularAnimations: NextPage = () => {
       lotties={data?.lotties}
       error={error}
       loading={loading}
-      query={PopularLottiesQuery}
       title="Popular Animations"
     />
   )

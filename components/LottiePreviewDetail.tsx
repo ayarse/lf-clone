@@ -1,9 +1,9 @@
 import { Controls, Player } from '@lottiefiles/react-lottie-player'
 import React, { useEffect, useState } from 'react'
-import { Avatar } from './shared'
 import { IconButton, Lottie } from './util'
 // import * as LottieJS from '@lottiefiles/lottie-js'
 import watermark from '../public/lotties/watermark.json'
+import { Avatar } from './shared'
 
 type LottiePreviewDetailProps = {
   lottie: Lottie
@@ -77,9 +77,9 @@ const LottiePreviewDetail = ({ lottie }: LottiePreviewDetailProps) => {
     <>
       <div className="flex items-center p-4">
         <div className="w-10">
-          <Avatar url={lottie.user.avatar || undefined} />
+          <Avatar url={lottie?.user?.avatar ?? undefined} />
         </div>
-        <div className="ml-4 text-lf-grey-darker ">{lottie.user.name}</div>
+        <div className="ml-4 text-lf-grey-darker ">{lottie?.user?.name}</div>
         <div className="flex-1 text-right">
           <IconButton label="Download" icon="download" />{' '}
           <IconButton icon="heart" label={`Like ${lottie.likes ?? 0}`} />
