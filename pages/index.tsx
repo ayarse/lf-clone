@@ -70,7 +70,10 @@ const Home: NextPage = () => {
             LottieFiles provides all the tools that you need to <br />
             create, edit, test and display Lottie animations.
           </p>
-          <ArrowButton title="Go to My Dashboard" url="#"></ArrowButton>
+          <ArrowButton
+            title="Go to My Dashboard"
+            url="/dashboard"
+          ></ArrowButton>
         </div>
         <div className="w-1/2">
           <Player
