@@ -12,17 +12,17 @@ const navItems = [
   },
   {
     name: 'Design',
-    href: '',
+    href: '/',
     color: 'lf-green',
   },
   {
     name: 'Code',
-    href: '',
+    href: '/',
     color: 'lf-blue',
   },
   {
     name: 'Learn',
-    href: '',
+    href: '/',
     color: 'lf-violet',
   },
 ]
