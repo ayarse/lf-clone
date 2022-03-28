@@ -33,7 +33,7 @@ const Dashboard: NextPage = () => {
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
   const router = useRouter()
-  const [openFileSelector, { filesContent, loading }] = useFilePicker({
+  const [openFileSelector, { filesContent }] = useFilePicker({
     accept: '.json',
     multiple: false,
   })
