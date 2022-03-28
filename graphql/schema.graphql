@@ -19,6 +19,10 @@ type Lottie {
   userId: Int!
 }
 
+type Mutation {
+  createLottie(assetUrl: String, description: String, file: String!, fileName: String!, title: String!, userId: Int = 1): UploadNewLottie
+}
+
 type Query {
   lotties(page: Int = 1, sortBy: String = "createdAt"): [Lottie]!
   search(query: String!): [Lottie]!
@@ -30,6 +34,13 @@ type Tag {
   id: Int!
   lotties: [Lottie]
   name: String
+}
+
+type UploadNewLottie {
+  assetUrl: String
+  description: String
+  title: String
+  userId: Int
 }
 
 type User {
