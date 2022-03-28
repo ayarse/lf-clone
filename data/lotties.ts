@@ -122,6 +122,7 @@ export const lotties: Prisma.LottieCreateManyInput[] = [
     },
     {
         "userId": rand(1, 6),
+        "tagId": 1,
         "assetUrl": "https://assets8.lottiefiles.com/packages/lf20_nTfkVR.json",
         "title": "No internet connection - Empty state",
         "downloads": 3942,
@@ -131,6 +132,7 @@ export const lotties: Prisma.LottieCreateManyInput[] = [
     },
     {
         "userId": rand(1, 6),
+        "tagId": 1,
         "assetUrl": "https://assets2.lottiefiles.com/datafiles/HN7OcWNnoqje6iXIiZdWzKxvLIbfeCGTmvXmEm1h/data.json",
         "title": "Car",
         "downloads": 3884,
@@ -356,6 +358,7 @@ export const lotties: Prisma.LottieCreateManyInput[] = [
     },
     {
         "userId": rand(1, 6),
+        "tagId": 1,
         "assetUrl": "https://assets1.lottiefiles.com/datafiles/1QPWH9xjWBflXo1QBqsL0XszJILLRF2dMiZ7PBt3/Trophy-animation/trophy.json",
         "title": "Trophy animation",
         "downloads": 1885,
@@ -365,6 +368,7 @@ export const lotties: Prisma.LottieCreateManyInput[] = [
     },
     {
         "userId": rand(1, 6),
+        "tagId": 1,
         "assetUrl": "https://assets6.lottiefiles.com/packages/lf20_2kHQhR.json",
         "title": "Rocket in space",
         "downloads": 1877,

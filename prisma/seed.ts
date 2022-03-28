@@ -8,6 +8,11 @@ async function main() {
     await prisma.user.createMany({
         data: users
     })
+    await prisma.tag.create({
+        data: {
+            name: "featured"
+        }
+    })
     await prisma.lottie.createMany({
         data: lotties
     })
