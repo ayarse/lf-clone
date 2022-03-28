@@ -2,6 +2,7 @@ import { useQuery } from '@apollo/client'
 import { gql } from '@apollo/client/core'
 import type { NextPage } from 'next'
 import AnimationList from '../components/AnimationList'
+import { Loader } from '../components/shared'
 
 const AllAnimationsQuery = gql`
   query Query {
@@ -21,7 +22,11 @@ const AllAnimationsQuery = gql`
 `
 
 const Browse: NextPage = () => {
-  const { data, error, loading } = useQuery(AllAnimationsQuery)
+  const { data, error, loading } = useQuery(AllAnimationsQuery, {
+    fetchPolicy: 'network-only',
+  })
+
+  if (loading) return <Loader />
 
   return (
     <AnimationList
