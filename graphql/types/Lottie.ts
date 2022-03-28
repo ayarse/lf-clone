@@ -39,7 +39,8 @@ export const LottieQuery = extendType({
             type: 'Lottie',
             args: {
                 page: intArg({ default: 1 }),
-                sortBy: stringArg({ default: 'createdAt' })
+                sortBy: stringArg({ default: 'createdAt' }),
+                sortOrder: stringArg({ default: "desc" })
             },
             // eslint-disable-next-line
             resolve(_parent, args, ctx): any {
@@ -48,7 +49,7 @@ export const LottieQuery = extendType({
                         skip: args.page ?? 1 > 1 ? (args.page ?? 1) * 16 - 16 : 0,
                         take: 16,
                         orderBy: {
-                            [args.sortBy ?? "createdAt"]: "desc"
+                            [args.sortBy ?? "createdAt"]: args.sortOrder ?? "desc"
                         }
                     }
                 )

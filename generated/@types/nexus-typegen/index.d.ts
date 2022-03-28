@@ -178,6 +178,7 @@ export interface NexusGenArgTypes {
     lotties: { // args
       page: number | null; // Int
       sortBy: string | null; // String
+      sortOrder: string | null; // String
     }
     search: { // args
       query: string; // String!

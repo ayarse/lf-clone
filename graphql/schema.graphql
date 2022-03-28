@@ -24,7 +24,7 @@ type Mutation {
 }
 
 type Query {
-  lotties(page: Int = 1, sortBy: String = "createdAt"): [Lottie]!
+  lotties(page: Int = 1, sortBy: String = "createdAt", sortOrder: String = "desc"): [Lottie]!
   search(query: String!): [Lottie]!
   tags(name: String!): Tag!
   users: [User]!
